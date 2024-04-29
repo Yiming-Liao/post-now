@@ -8,7 +8,7 @@ const Profile = ({ name, desc, data, handleEdit, handleDelete }) => {
             </h1>
             <p className='text-left mx-[6vw]'>{desc}</p>
 
-            <div className='flex justify-center gap-10 mt-20'>
+            <div className='flex justify-center gap-10 mt-20 flex-wrap'>
                 {data.map((post) => (
                     <Card
                         key={post._id}

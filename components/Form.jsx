@@ -8,16 +8,13 @@ const Form = ({ type, content, setContent, submitting, onSubmit }) => {
             <form
                 onSubmit={onSubmit}
             >
-                <label htmlFor='textarea'>
-                    <textarea
-                        name="textarea"
-                        value={content}
-                        onChange={(e) => setContent(e.target.value)}
-                        placeholder='在此寫下內容...'
-                        required
-                        className='border-2 border-slate-500 rounded-2xl w-[350px] h-[250px] p-6'
-                    />
-                </label>
+                <textarea
+                    value={content}
+                    onChange={(e) => setContent(e.target.value)}
+                    placeholder='在此寫下內容...'
+                    required
+                    className='border-2 border-slate-500 rounded-2xl w-[350px] h-[250px] p-6'
+                />
                 <div className="flex justify-center gap-20">
                     <button
                         className='bg-orange-500 text-white py-2 px-4 rounded-full'
