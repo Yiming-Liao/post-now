@@ -14,6 +14,8 @@ const MyProfile = () => {
 
 
     const fetchPosts = async () => {
+        console.log(session);
+
         const response = await fetch(`/api/user/${session?.user.id}/posts`);
         const data = await response.json();
         setMyPosts(data);
